@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(255, 255, 255);
+    }
+  
+    h1 {
+        color: rgb(0, 0, 0);
+        text-align: left;
+        font-size: 45px;
+    }
+
+    .Customize {
+        position: absolute;
+        margin-top: -65px;
+        margin-left: 1500px;
+    }
+  
+    h2 {
+    /* font-family: verdana; */
+        font-size: 25px;
+    }
+
+    .Grade {
+        text-indent: 9%;
+        margin-top: 150px;
+    }
+
+    h3.Exam {
+        border: solid 100% black;
+        text-indent: 47.5%;
+        margin-top: -40px;
+    }
+
+    .Graph {
+        text-indent: 9%;
+        margin-top: 50px;
+    }
+
+    .Overdue {
+        text-align: right;
+        margin-top: -300px;
+        margin-right: 190px;
+    }
+
+    .Today {
+        text-align: right;
+        margin-right: 190px;
+    }
+
+    .Upcoming {
+        text-align: right;
+        margin-right: 190px;
+    }
+
+    img {
+        position: absolute;
+        top: 600px;
+        right: 750px;
+    }
+
+  }
