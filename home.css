@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Top Navbar Styles */
+.navbar {
+    background-color: orange;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.dashboard {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+    font-size: 28px;
+}
+
+.dashboard h2 {
+    font-size: 20px;
+}
+
+.dashboard hr {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.dashboard .Grade, .dashboard .Exam, .dashboard .Graph, .dashboard .Overdue, .dashboard .Today, .dashboard .Upcoming {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.dashboard .Graph img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.empty-box {
+    flex: 0 0 250px;
+    background-color: lightgray;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}

@@ -1,60 +1,88 @@
 body {
     background-color: rgb(255, 255, 255);
-    }
-  
-    h1 {
-        color: rgb(0, 0, 0);
-        text-align: left;
-        font-size: 45px;
-    }
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    .Customize {
-        position: absolute;
-        margin-top: -65px;
-        margin-left: 1500px;
-    }
-  
-    h2 {
-    /* font-family: verdana; */
-        font-size: 25px;
-    }
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    text-align: left;
+    margin-left: 20px;
+}
 
-    .Grade {
-        text-indent: 9%;
-        margin-top: 150px;
-    }
+h2 {
+    font-size: 25px;
+    margin-left: 20px;
+}
 
-    h3.Exam {
-        border: solid 100% black;
-        text-indent: 47.5%;
-        margin-top: -40px;
-    }
+.Customize {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
 
-    .Graph {
-        text-indent: 9%;
-        margin-top: 50px;
-    }
+.Grade {
+    margin-top: 150px;
+    text-indent: 9%;
+}
 
-    .Overdue {
-        text-align: right;
-        margin-top: -300px;
-        margin-right: 190px;
-    }
+h3.Exam {
+    border: solid 2px black;
+    text-align: center;
+    margin-top: -40px;
+}
 
-    .Today {
-        text-align: right;
-        margin-right: 190px;
-    }
+.Graph {
+    text-indent: 9%;
+    margin-top: 50px;
+}
 
-    .Upcoming {
-        text-align: right;
-        margin-right: 190px;
-    }
+.Overdue,
+.Today,
+.Upcoming {
+    text-align: right;
+    margin-right: 190px;
+}
 
-    img {
-        position: absolute;
-        top: 600px;
-        right: 750px;
-    }
+.Overdue {
+    margin-top: -100px;
+}
 
-  }
+.Today {
+    margin-top: -40px;
+}
+
+.Upcoming {
+    margin-top: -40px;
+}
+
+img {
+    position: absolute;
+    top: 600px;
+    right: 50px;
+    width: 600px;
+}
+
+hr {
+    border-bottom: 2px solid #000;
+}
+
+hr:nth-child(3) {
+    width: 2px;
+    height: 300px;
+    border-left: 2px solid black;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    margin-top: -1%;
+}
+
+hr:nth-child(4) {
+    width: 2px;
+    height: 300px;
+    border-left: 2px solid black;
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+    margin-top: -1%;
+}
