@@ -2,63 +2,68 @@ body {
     background-color: black;
 }
 .column{
-    width:1000px;
+    width:1895px;
     height: 75px;
-    background-color: rgb(230, 190, 11);
+    background-color:white;
     border-width: 3;
-    margin-left: -10;
+    margin-left: -2;
+    margin-top: -5;
+    color:black
 
 }
 .flex{
     position: absolute;
     margin-top: -100px;
-    width:100px;
+    width:600px;
     height: 10px;
 
-    background-color: rgb(230, 190, 11);
-    border-color: black;
+    background-color: rgb(253, 253, 253);
+    border-color: grey;
     border-width: 3;
 }
 
     .Button1{
         position: absolute;
         margin-top: -10px;
-        margin-left: 450px;
-        background-color: black;
-        color:white;
+        margin-left: 1250px;
+        background-color: lightgray;
+        color:black;
         height: 45;
-        width:90;
+        width:170;
+        border-radius: 30px;
     }
     .Button2{
         position: absolute;
         margin-top: -10px;
-        margin-left: 600px;
-        background-color: black;
-        color:white;
+        margin-left:950px;
+        background-color: lightgray;
+        color:black;
         height: 45;
-        width:90;
+        width:170;
+        border-radius: 30px;
     }
     .Button3{
         position: absolute;
         margin-top: -10px;
-        margin-left: 750px;
-        background-color: black;
-        color:white;
+        margin-left: 1550px;
+        background-color: lightgray;
+        color:black;
         height: 45;
-        width:90;
-        border-radius: 2px;
+        width:170;
+        border-radius: 30px;
         
     }
     .drop{
         position: absolute;
         margin-top: -32px;
         margin-left: -5px;
-        background-color:  rgb(230, 190, 11);
-        color:white;
+        background-color:  white;
+        color:black;
         font-size: 25px;
-        width: 275px;
+        width: 475px;
         border-width: 3;
         height: 65;
+        margin-left: -2;
         
     }
     h1{
@@ -70,18 +75,18 @@ body {
     
     h2{
         font-size: 30px;
-        color:black;
+        color:white;
         text-align: left;
         
     }
     .rem{
         position: absolute;
         margin-top: 2px;
-        margin-left: 625px;
+        margin-left: 1183px;
         background-color: white;
         color:Black;
         height: 800;
-        width:310;
+        width:710;
         font-size: 25px;
         text-align: center;
         border-width: 3;
@@ -93,7 +98,7 @@ body {
         background-color: white;
         color:Black;
         height: 800;
-        width:633;
+        width:1191;
         font-size: 25px;
         text-align: center;
         border-width: 3;
@@ -105,7 +110,7 @@ body {
         background-color: white;
         color:Black;
         height: 196;
-        width:633;
+        width:1191;
         font-size: 25px;
         text-align: center;
         border-width: 3;
