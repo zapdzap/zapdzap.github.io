@@ -37,6 +37,7 @@ body {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+    border: black;
     min-width: 160px;
     z-index: 1;
 }
@@ -58,8 +59,8 @@ body {
 }
 
 .nav-btn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -67,7 +68,7 @@ body {
 }
 
 .nav-btn:hover {
-    background-color: #45a049;
+    background-color: white;
 }
 
 /* Main Content Styles */
