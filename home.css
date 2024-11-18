@@ -15,6 +15,13 @@ body {
     align-items: center;
 }
 
+.left-buttons,
+.right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -37,7 +44,7 @@ body {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    border: black;
+    border: 1px solid black;
     min-width: 160px;
     z-index: 1;
 }
@@ -53,22 +60,20 @@ body {
     background-color: #ddd;
 }
 
-.buttons {
-    display: flex;
-    gap: 15px;
-}
-
+/* Remove white boxes around nav buttons */
 .nav-btn {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
 }
 
 .nav-btn:hover {
-    background-color: white;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    color: black;
 }
 
 /* Main Content Styles */
@@ -79,11 +84,14 @@ body {
 }
 
 .dashboard {
-    flex: 1;
+    flex: 0 0 70%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .dashboard h1 {
@@ -99,22 +107,91 @@ body {
     border: 1px solid #ccc;
 }
 
-.dashboard .Grade, .dashboard .Exam, .dashboard .Graph, .dashboard .Overdue, .dashboard .Today, .dashboard .Upcoming {
+.dashboard .grades-section {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
+}
+
+.dashboard .grades-section div {
+    width: 48%;
+}
+
+.dashboard .grades-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dashboard .grades-section p {
     font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
 }
 
-.dashboard .Graph img {
-    width: 100%;
-    height: auto;
+.tasks-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 20px;
+    flex-grow: 1;
 }
 
+.task-box {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.task-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.task-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.task-box a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.task-box a:hover {
+    text-decoration: underline;
+}
+
+.task-box.overdue {
+    background-color: #ffe6e6;
+}
+
+.task-box.today {
+    background-color: #ffffcc;
+}
+
+.task-box.upcoming {
+    background-color: #e6f7ff;
+}
+
+/* Sidebar (Empty Box) */
 .empty-box {
-    flex: 0 0 250px;
+    flex: 0 0 25%;
     background-color: lightgray;
     height: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
+}
+
+/* Announcements Section */
+.announcements {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
