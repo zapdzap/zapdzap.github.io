@@ -107,7 +107,7 @@ body {
 
 .left-buttons .dropdown .dropbtn {
     position: relative;
-    left: -15px; /* Adjust this value to move the dropdown button slightly to the left */
+    left: -15px;
 }
 
 
