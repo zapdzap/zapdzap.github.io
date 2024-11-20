@@ -102,8 +102,14 @@ body {
 .dashboard .grades-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
 }
+
+.left-buttons .dropdown .dropbtn {
+    position: relative;
+    left: -15px; /* Adjust this value to move the dropdown button slightly to the left */
+}
+
 
 .dashboard .grades-section div {
     width: 48%;
@@ -296,3 +302,21 @@ body {
     font-size: 16px;
     color: #555;
 }
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #class-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .class-switcher {
+    padding: 5px;
+    font-size: 1em;
+  }
+  
