@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCourses Homepage</title>
+    <title>Interactive Sidebar</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
             <div class="dropdown">
                 <button class="dropbtn">U-name</button>
                 <div class="dropdown-content">
-                    <a href="#">info</a>
+                    <a href="#">Info</a>
                     <a href="#">Enroll</a>
                     <a href="#">Logout</a>
                 </div>
@@ -46,8 +46,8 @@
     <!-- Main Content -->
     <div class="main-content">
         <!-- Dashboard -->
-        <div class="dashboard">       
-            <!-- Latest Grade and Latest Exam -->
+        <div class="dashboard">
+            <!-- Grades Section -->
             <div class="grades-section">
                 <div class="latest-grade">
                     <h3>Latest Grade</h3>
@@ -58,10 +58,10 @@
                     <p>89% - Physics Exam</p>
                 </div>
             </div>
-        
+
             <hr>
-        
-            <!-- Overdue, Today, Upcoming Sections -->
+
+            <!-- Tasks Section -->
             <div class="tasks-section">
                 <div class="task-box overdue">
                     <h3><a href="courses.html">Overdue Assignment 1</a></h3>
@@ -85,40 +85,61 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Empty Rectangle Box -->
-        <div class="empty-box"></div>
+
+        <!-- Interactive Sidebar -->
+        <div class="interactive-sidebar">
+            <button class="switch-btn" onclick="switchSidebar()">⇄</button>
+            <div id="sidebar-content">
+                <h3>Upcoming Assignments</h3>
+                <ul>
+                    <li>Math Homework - 2024-11-21</li>
+                    <li>Science Project - 2024-11-25</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- Announcements Section -->
     <div class="announcements">
         <h1>Announcements</h1>
         <div class="announcement-box">
-            <h3>Midterm Exams Scheduled</h3>
-            <p>Midterm exams are scheduled for next week. Please check the timetable for specific dates and times.</p>
-            <span>Author: Professor Smith | Posted: 2024-11-15</span>
+            <h2>Announcement 1</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="author">- Admin</p>
         </div>
         <div class="announcement-box">
-            <h3>New Resources for Physics 101</h3>
-            <p>New learning resources have been added for Physics 101. Visit the course page to access them.</p>
-            <span>Author: Dr. Cooper | Posted: 2024-11-14</span>
-        </div>
-        <div class="announcement-box">
-            <h3>Coding Club Hackathon</h3>
-            <p>Join the Coding Club's Hackathon event this Saturday! Sign up now to participate in an exciting day of coding challenges and prizes.</p>
-            <span>Author: Coding Club | Posted: 2024-11-13</span>
-        </div>
-        <div class="announcement-box">
-            <h3>Project Proposal Deadline</h3>
-            <p>Reminder: Submit your project proposals by November 24 to avoid penalties.</p>
-            <span>Author: Course Coordinator | Posted: 2024-11-12</span>
-        </div>
-        <div class="announcement-box">
-            <h3>Thanksgiving Campus Closure</h3>
-            <p>The campus will be closed on November 28 in observance of Thanksgiving. Enjoy the holiday!</p>
-            <span>Author: Administration Office | Posted: 2024-11-10</span>
+            <h2>Announcement 2</h2>
+            <p>Consectetur adipiscing elit.</p>
+            <p class="author">- Principal</p>
         </div>
     </div>
-    
+
+    <script>
+        let sidebarIndex = 0;
+        const sidebars = [
+            {
+                title: "Upcoming Assignments",
+                content: "<ul><li>Math Homework - 2024-11-21</li><li>Science Project - 2024-11-25</li></ul>",
+            },
+            {
+                title: "Calendar",
+                content: "<p>Placeholder calendar view</p>",
+            },
+            {
+                title: "Messages",
+                content: "<ul><li>Message 1: Don't forget about the meeting!</li><li>Message 2: Great job on the project.</li></ul>",
+            },
+            {
+                title: "Shortcuts",
+                content: "<ul><li><a href='info.html'>Profile</a></li><li><a href='clubs.html'>Clubs</a></li></ul>",
+            },
+        ];
+
+        function switchSidebar() {
+            sidebarIndex = (sidebarIndex + 1) % sidebars.length;
+            const sidebarContent = document.getElementById("sidebar-content");
+            sidebarContent.innerHTML = `<h3>${sidebars[sidebarIndex].title}</h3>${sidebars[sidebarIndex].content}`;
+        }
+    </script>
 </body>
 </html>
