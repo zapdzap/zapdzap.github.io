@@ -1,70 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<link rel="stylesheet" href="info1.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="info.css">
 </head>
-
-
 <body>
-    <h1>Personal Information: Joe Smith</h1>
-    <div class="Row">
-        <div class="Col">
-            <div class = "pfp"></div>
-            <div class = 'pic'>
-                <button> Change Picture</button>
+    <div class="navbar">
+        <div class="left-buttons">
+            <a href="home.html"><button class="nav-btn">Home</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Class Name</button>
+                <div class="dropdown-content">
+                    <a href="Courses.html">Class 1</a>
+                    <a href="Courses.html">Class 2</a>
+                    <a href="Courses.html">Class 3</a>
+                </div>
             </div>
         </div>
-        <div class="Col">
+
+        <div class="right-buttons">
+            <div class="dropdown">
+                <button class="dropbtn">Notifi</button>
+                <div class="dropdown-content">
+                    <a href="#">Notification 1</a>
+                    <a href="#">Notification 2</a>
+                    <a href="#">Notification 3</a>
+                </div>
+            </div>
+            <a href="clubs.html"><button class="nav-btn">Clubs</button></a>
+            <a href="Reminders.html"><button class="nav-btn">Reminders</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">U-name</button>
+                <div class="dropdown-content">
+                    <a href="info.html">Info</button></a>
+                    <a href="addcourses.html">Enroll</button></a>
+                    <a href="index.html">Logout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Personal Information</h1>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-left">
+            <div class="pfp"></div>
+            <button class="change-pic-btn">Change Picture</button>
+        </div>
+        <div class="profile-right">
             <input placeholder="Nickname">
             <input placeholder="Hometown">
             <input placeholder="Homepage">
         </div>
-        <div class="Col">
-            <input placeholder="Education">
-            <input placeholder="Position">
-            <input placeholder="Birthday">
-        </div>
-        <div class="Col">
-            <div class="bio">
-                <h3>Bio</h3>
-                <textarea placeholder="Write a bit about yourself.." class = "bio"></textarea>
-            </div>
-    </div>
+    </section>
 
-    <div class="social">
-        <h3>Socials</h3>
-    </div>
-    <div class="soc"> 
+    <!-- Bio Section -->
+    <section class="bio-section">
+        <h2>Bio</h2>
+        <textarea placeholder="Write a bit about yourself.."></textarea>
+    </section>
+
+    <!-- Socials Section -->
+    <section class="socials-section">
+        <h2>Socials</h2>
         <input placeholder="LinkedIn">
         <input placeholder="Instagram">
         <input placeholder="Facebook">
-    </div>
+    </section>
 
-    <div class = "contact">
-        <h3>Contact Information</h3>
-        <input class = "i2"placeholder="Email">
-        <input class = "i2"placeholder="Address">
-        <input class ='i2' placeholder="State">
-        
-    </div>
-    <div class = "morecontact">
-        <input class = "i2"placeholder="Phone Number">
-        <input class = "i2" placeholder="City">
-        
-        <input class = "i2" placeholder="Country">
-    </div>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Information</h2>
+        <div class="contact-inputs">
+            <input placeholder="Email">
+            <input placeholder="Address">
+            <input placeholder="City">
+            <input placeholder="State">
+            <input placeholder="Country">
+            <input placeholder="Phone Number">
+        </div>
+    </section>
 
-
-    
-    </div>
-    <div class = "b">
+    <!-- Save Button -->
+    <div class="save-button">
         <button>Save</button>
     </div>
-    
-
-
 </body>
-
-
 </html>
