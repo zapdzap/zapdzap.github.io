@@ -1,111 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<link rel="stylesheet" href="Grades.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Page</title>
+    <link rel="stylesheet" href="grades.css">
 </head>
-
 <body>
-  
-<div class="content">
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <div class="left-buttons">
+            <a href="home.html"><button class="nav-btn">Home</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Class Name</button>
+                <div class="dropdown-content">
+                    <a href="Courses.html">Class 1</a>
+                    <a href="Courses.html">Class 2</a>
+                    <a href="Courses.html">Class 3</a>
+                </div>
+            </div>
+        </div>
 
-    <div class="name_input">
-        <input class = "searchCourses" placeholder="Search Grades">
-        <h1 class = "name">Doe, John</h1>
-        <button class = "enroll"> Add Grade</button>
+        <div class="right-buttons">
+            <a href="#"><button class="nav-btn">Classlist</button></a>
+            <a href="Grades.html"><button class="nav-btn">Grades</button></a>
+            <a href="#"><button class="nav-btn">Quizzes</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">U-name</button>
+                <div class="dropdown-content">
+                    <a href="info.html">Info</button></a>
+                    <a href="addcourses.html">Enroll</button></a>
+                    <a href="index.html">Logout</button></a>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Grades Section -->
+    <div class="grades-section">
+        <h1>Final Grade</h1>
+        <p>Weight Achieved: <strong>100/100</strong></p>
 
-        <div class="courseList">
-            <div class = "card">
-                <div class = img></div>
-                <h1>Midterm - 80%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
+        <!-- Collapsible Sections -->
+        <div class="collapsible-section">
+            <button class="collapsible">Homework</button>
+            <div class="content">
+                <div class="assignment-box">Assignment 1</div>
+                <div class="assignment-box">Assignment 2</div>
+                <div class="assignment-box">Assignment 3</div>
             </div>
-
-            <div class = "card">
-                <div class = img></div>
-                <h1>Final- 20%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
-            </div>
-
-            <div class = "card">
-                <div class = img></div>
-                <h1>Quiz 1- 90%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
-            </div>
-
-            <div class = "card">
-                <div class = img></div>
-                <h1>Homework - 80%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
-            </div>
-
         </div>
 
-        <div class="courseList">
-            <div class = "card">
-                <div class = img></div>
-                <h1>Midterm - 80%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
+        <div class="collapsible-section">
+            <button class="collapsible">Classwork</button>
+            <div class="content">
+                <div class="assignment-box">Task 1</div>
+                <div class="assignment-box">Task 2</div>
+                <div class="assignment-box">Task 3</div>
             </div>
-
-            <div class = "card">
-                <div class = img></div>
-                <h1>Final- 20%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
-            </div>
-
-            <div class = "card">
-                <div class = img></div>
-                <h1>Quiz 1- 90%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
-            </div>
-
-            <div class = "card">
-                <div class = img></div>
-                <h1>Homework - 80%</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                   1
-                </p>
-                <button>View</button>
-            </div>
-
         </div>
-    
-    
 
-</div>
+        <div class="collapsible-section">
+            <button class="collapsible">Quizzes</button>
+            <div class="content">
+                <div class="assignment-box">Quiz 1</div>
+                <div class="assignment-box">Quiz 2</div>
+                <div class="assignment-box">Quiz 3</div>
+            </div>
+        </div>
 
+        <div class="collapsible-section">
+            <button class="collapsible">Tests</button>
+            <div class="content">
+                <div class="assignment-box">Midterm Exam</div>
+            </div>
+        </div>
 
+        <div class="collapsible-section">
+            <button class="collapsible">Projects</button>
+            <div class="content">
+                <div class="assignment-box">Final Project</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const collapsibles = document.querySelectorAll(".collapsible");
+            collapsibles.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const content = button.nextElementSibling;
+                    button.classList.toggle("active");
+
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
