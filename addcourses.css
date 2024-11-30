@@ -95,25 +95,25 @@ p{
 .img{
     height: 125px;
     width: 250px;
-    background-image: url(Images/math.png);
+    background-image: url(math.png);
 }
 
 .img2{
     height: 125px;
     width: 250px;
-    background-image: url(Images/english.jpg)
+    background-image: url(english.jpg)
 }
 
 .img3{
     height: 125px;
     width: 250px;
-    background-image: url(Images/science.jpg);
+    background-image: url(science.jpg);
 }
 
 .img4{
     height: 125px;
     width: 250px;
-    background-image: url(Images/art.jpg);
+    background-image: url(art.jpg);
 }
 
 button{

@@ -96,28 +96,28 @@ p{
 .img{
     height: 125px;
     width: 250px;
-    background-image: url(Images/Chess.jpg);
+    background-image: url(Chess.jpg);
     background-size: contain;
 }
 
 .img2{
     height: 125px;
     width: 250px;
-    background-image: url(Images/Tennis.jpg);
+    background-image: url(Tennis.jpg);
     background-size: contain;
 }
 
 .img3{
     height: 125px;
     width: 250px;
-    background-image: url(Images/Coding.jpg);
+    background-image: url(Coding.jpg);
     background-size: contain;
 }
 
 .img4{
     height: 125px;
     width: 250px;
-    background-image: url(Images/ski.jpg);
+    background-image: url(ski.jpg);
     background-size: contain;
 }
 
