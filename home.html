@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyCourses Home</title>
     <link rel="stylesheet" href="home.css">
+
 </head>
-<body>
+<body id ="body1">
     <!-- Top Navigation Bar -->
     <div class="navbar">
         <div class="left-buttons">
             <a href="home.html"><button class="nav-btn">Home</button></a>
             <a href="Courses.html"><button class="nav-btn">Courses</button></a>
+            <button class="nav-btn" onclick="toggle()">Toggle Mode</button>
 
         </div>
 
@@ -40,7 +42,7 @@
     <!-- Main Content -->
     <div class="main-content">
         <!-- Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard" id ="dash">
             <div class="dashboard-header">
                 <!-- Class Name -->
                 <h2 class="class-name">Physics</h2>
@@ -95,48 +97,48 @@
         </div>
 
         <!-- Interactive Sidebar -->
-        <div class="interactive-sidebar">
+        <div class="interactive-sidebar" id = "sidebar">
             <button class="switch-btn" onclick="switchSidebar()">⇄</button>
             <div id="sidebar-content">
                 <h3>Upcoming Assignments</h3>
                 <ul>
-                    <li>Math Homework - 2024-11-21</li>
-                    <li>Science Project - 2024-11-25</li>
+                    <li >Math Homework - 2024-11-21</li>
+                    <li >Science Project - 2024-11-25</li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- Announcements Section -->
-    <div class="announcements">
+    <div class="announcements" id ="announcements">
         <h1>Announcements</h1>
         <div class="announcement-box">
             <h3>Midterm Exams Scheduled</h3>
-            <p>Midterm exams are scheduled for next week. Please check the timetable for specific dates and times.</p>
-            <span>Author: Professor Smith | Posted: 2024-11-15</span>
+            <p class="toggle">Midterm exams are scheduled for next week. Please check the timetable for specific dates and times.</p>
+            <span class="toggle">Author: Professor Smith | Posted: 2024-11-15</span>
         </div>
         <div class="announcement-box">
-            <h3>New Resources for Physics 101</h3>
-            <p>New learning resources have been added for Physics 101. Visit the course page to access them.</p>
-            <span>Author: Dr. Cooper | Posted: 2024-11-14</span>
+            <h3 >New Resources for Physics 101</h3>
+            <p class="toggle">New learning resources have been added for Physics 101. Visit the course page to access them.</p>
+            <span class="toggle">Author: Dr. Cooper | Posted: 2024-11-14</span>
         </div>
         <div class="announcement-box">
             <h3>Coding Club Hackathon</h3>
-            <p>Join the Coding Club's Hackathon event this Saturday! Sign up now to participate in an exciting day of coding challenges and prizes.</p>
-            <span>Author: Coding Club | Posted: 2024-11-13</span>
+            <p class="toggle">Join the Coding Club's Hackathon event this Saturday! Sign up now to participate in an exciting day of coding challenges and prizes.</p>
+            <span class="toggle" >Author: Coding Club | Posted: 2024-11-13</span>
         </div>
         <div class="announcement-box">
             <h3>Project Proposal Deadline</h3>
-            <p>Reminder: Submit your project proposals by November 24 to avoid penalties.</p>
-            <span>Author: Course Coordinator | Posted: 2024-11-12</span>
+            <p class="toggle">Reminder: Submit your project proposals by November 24 to avoid penalties.</p>
+            <span class="toggle">Author: Course Coordinator | Posted: 2024-11-12</span>
         </div>
         <div class="announcement-box">
             <h3>Thanksgiving Campus Closure</h3>
-            <p>The campus will be closed on November 28 in observance of Thanksgiving. Enjoy the holiday!</p>
-            <span>Author: Administration Office | Posted: 2024-11-10</span>
+            <p class="toggle">The campus will be closed on November 28 in observance of Thanksgiving. Enjoy the holiday!</p>
+            <span class="toggle">Author: Administration Office | Posted: 2024-11-10</span>
         </div>
     </div>
-
+    <script src="home.js"></script>
     <script>
         let sidebarIndex = 0;
         const sidebars = [
@@ -164,5 +166,6 @@
             sidebarContent.innerHTML = `<h3>${sidebars[sidebarIndex].title}</h3>${sidebars[sidebarIndex].content}`;
         }
     </script>
+   
 </body>
 </html>
